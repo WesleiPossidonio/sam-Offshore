@@ -15,7 +15,7 @@ export const About = () => {
       <div className="container mx-auto p-8 md:px-16 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-          <div className="flex items-center justify-center gap-3 md:gap-6 order-2 md:order-1" data-aos="fade-right" data-aos-duration="3000">
+          <div className="flex items-center justify-center gap-3 md:gap-6 order-2 md:order-1" data-aos="fade-left" data-aos-duration="2500">
             <div className='relative flex flex-col gap-6'>
               <span className=" absolute -left-4 -top-5 flex flex-col items-center justify-center p-4 bg-neutral-100 rounded-lg shadow">
                 <strong className="text-2xl md:text-4xl self-start text-blue-900">300+</strong>
@@ -40,7 +40,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className=" flex flex-col items-start justify-center gap-4" data-aos="fade-left" data-aos-duration="3000">
+          <div className=" flex flex-col items-start justify-center gap-4" data-aos="fade-right" data-aos-duration="2500">
             <h2 className=" text-sm text-center text-neutral-500 px-3 py-1 border border-neutral-500 rounded-3xl font-semibold">
               {t.tag}
             </h2>

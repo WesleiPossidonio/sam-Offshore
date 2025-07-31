@@ -23,13 +23,13 @@ export const Contacts = () => {
         </h2>
 
         <div className="col-span-6 md:col-span-3 flex flex-col gap-2 items-start justify-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-neutral-900 text-center md:text-start" data-aos="zoom-in" data-aos-duration="3000">
+          <h1 className="text-3xl md:text-5xl font-bold text-neutral-900 text-center md:text-start">
             {language
               ? 'Vamos transformar \n sua necessidade em solução!'
               : 'Let’s turn your need into a solution!'}
           </h1>
 
-          <p className="text-sm md:text-md text-center md:text-start" data-aos="zoom-in">
+          <p className="text-sm md:text-md text-center md:text-start">
             {language
               ? 'Se você busca um atendimento ágil, transparente e focado no que realmente importa para você, fale com a gente. Estamos prontos para ouvir, entender e oferecer o que há de melhor em nossos serviços.'
               : 'If you are looking for fast, transparent service focused on what really matters to you, talk to us. We are ready to listen, understand, and provide the best in our services.'}

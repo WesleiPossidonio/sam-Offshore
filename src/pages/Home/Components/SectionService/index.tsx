@@ -30,7 +30,7 @@ export const SectionService = () => {
       className="col-span-8 md:col-span-4 grid grid-cols-3 gap-4 p-6 relative w-full h-[23rem] md:h-[30rem] bg-center bg-cover 
         bg-no-repeat rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
       style={{ backgroundImage: `url(${images[index % images.length]})` }}
-      data-aos="zoom-in" data-aos-duration="3000"
+      data-aos="zoom-in" data-aos-duration="2500"
     >
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-900/80 to-transparent" />
 

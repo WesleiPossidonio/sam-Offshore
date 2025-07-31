@@ -20,7 +20,7 @@ export const Adjects = () => {
 
   return (
     <section className="w-full min-h-[20rem] h-auto bg-blue-950 flex items-center justify-center">
-      <div className="container px-8 py-14 grid grid-cols-4 gap-8" data-aos="zoom-in" data-aos-duration="3000">
+      <div className="container px-8 py-14 grid grid-cols-4 gap-8" data-aos="zoom-in" data-aos-duration="2500">
         {content.map((item, index) => (
           <div
             key={index}
