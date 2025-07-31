@@ -88,26 +88,32 @@ export const sectionServiceContent = {
     description: 'Oferecemos serviços estratégicos para garantir segurança, agilidade e eficiência nas operações portuárias e logísticas.',
     services: [
       {
+        id: 1,
         title: 'Despacho Marítimo',
         description:
           'Gerenciamos todas as obrigações legais e operacionais junto aos órgãos competentes, garantindo conformidade e agilidade:',
+        route: '/despacho-maritimo'
       },
       {
+        id: 2,
         title: 'Logística Operacional',
         description:
           'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
+        route: '/Logística-de-Operacional'
       },
-
       {
+        id: 3,
         title: 'Apoio Multissetorial',
         description:
           'Nosso suporte se estende aos setores internos da sua empresa para garantir a continuidade das operações:',
+        route: '/apoio-multissetorial'
       },
-
       {
-        title: 'oordenação Operacional Portuária',
+        id: 4,
+        title: 'Coordenação Operacional Portuária',
         description:
           'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
+        route: '/Coordenação-Operacional-Portuária'
       },
     ],
     seeMore: 'Ver Mais',
@@ -119,30 +125,37 @@ export const sectionServiceContent = {
     description: 'We offer strategic services to ensure safety, agility, and efficiency in port and logistics operations.',
     services: [
       {
+        id: 1,
         title: 'Maritime Clearance',
         description:
           'We manage all legal and operational obligations with the authorities, ensuring compliance and agility:',
+        route: '/despacho-maritimo'
       },
       {
+        id: 2,
         title: 'Operational Logistics',
         description:
           'Full support for the movement of people, cargo, and services in terminals:',
+        route: '/Logística-de-Operacional'
       },
-
       {
+        id: 3,
         title: 'Multisectoral Support',
         description:
           "Our support extends to your company's internal sectors to ensure continuity of operations:",
+        route: '/apoio-multissetorial'
       },
-
       {
+        id: 4,
         title: 'Port Operations Coordination',
         description:
           'We provide technical support for cargo operations and logistics services:',
+        route: '/Coordenação-Operacional-Portuária'
       },
     ],
     seeMore: 'See More',
     seeLess: 'Close',
   },
 }
+
 

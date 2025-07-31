@@ -7,7 +7,7 @@ import {
 
 interface LanguageContextType {
   language: string
-  // eslint-disable-next-line no-unused-vars
+
   handleLanguage: (lang: string) => void
 }
 
@@ -33,7 +33,6 @@ export const LanguageContextProvider = ({ children }: LanguageContextProviderPro
   const handleLanguage = (lang: string) => {
     setLanguage(lang)
     localStorage.setItem('language', lang)
-    console.log(lang)
   }
 
   return (

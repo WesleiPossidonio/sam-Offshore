@@ -11,7 +11,7 @@ export const About = () => {
   const t = aboutTexts[language as keyof typeof aboutTexts]
 
   return (
-    <section className="w-full min-h-[38rem] h-auto overflow-hidden">
+    <section className="w-full min-h-[38rem] h-auto overflow-hidden" id={`${language === 'pt-br' ? 'sobre-ns' : 'about-us'}`} >
       <div className="container mx-auto p-8 md:px-16 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 

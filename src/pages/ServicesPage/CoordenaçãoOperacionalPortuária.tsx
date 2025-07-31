@@ -2,6 +2,7 @@ import { Contacts } from "@/components"
 import { About, Banner } from "./components"
 
 import Image from '@/assets/banner.avif'
+import { useLanguage } from "@/hooks/useLanguage"
 
 // Definição dos textos em português
 const pt = {
@@ -32,10 +33,11 @@ const en = {
 }
 
 // Flag de idioma: troque para `true` para ver a versão em inglês
-const isEnglish = false
+
 
 export const CoordenaçãoOperacionalPortuária = () => {
-  const content = isEnglish ? en : pt
+  const { language } = useLanguage()
+  const content = language !== 'pt-BR' ? en : pt
 
   return (
     <main className="w-full min-h-svh h-auto">

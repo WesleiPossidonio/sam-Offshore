@@ -2,6 +2,7 @@ import { Contacts } from "@/components"
 import { About, Banner } from "./components"
 
 import Image from '@/assets/banner.avif'
+import { useLanguage } from "@/hooks/useLanguage"
 
 const pt = {
   title: 'Despacho Marítimo',
@@ -29,11 +30,10 @@ const en = {
   ]
 }
 
-// Troque para true para ativar inglês
-const isEnglish = false
 
 export const DespachoMaritimo = () => {
-  const content = isEnglish ? en : pt
+  const { language } = useLanguage()
+  const content = language !== 'pt-BR' ? en : pt
 
   return (
     <main className="w-full min-h-svh h-auto">
