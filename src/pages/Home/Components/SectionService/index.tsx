@@ -7,12 +7,14 @@ import { ArrowRight } from "lucide-react"
 import { useState, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from 'react-router-dom'
 
 
 export const SectionService = () => {
   const [allServices, setAllServices] = useState(false)
   const { language } = useLanguage()
   const content = sectionServiceContent[language as 'pt-BR' | "en"]
+  const navigate = useNavigate()
 
   useEffect(() => {
     AOS.init()
@@ -41,6 +43,7 @@ export const SectionService = () => {
 
       <div className="absolute top-4 md:bottom-4 right-6 z-20">
         <button
+          onClick={() => navigate(`/${service.title.replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`)}
           aria-label={`Ver mais sobre ${service.title}`}
           className="w-10 h-10 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-blue-900 shadow-md transition"
         >
