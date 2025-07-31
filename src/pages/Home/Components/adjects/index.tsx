@@ -20,12 +20,13 @@ export const Adjects = () => {
 
   return (
     <section className="w-full min-h-[20rem] h-auto bg-blue-950 flex items-center justify-center">
-      <div className="container px-8 py-14 grid grid-cols-4 gap-8" data-aos="zoom-in" data-aos-duration="2500">
+      <div className="container px-8 py-14 grid grid-cols-4 gap-8" >
         {content.map((item, index) => (
           <div
             key={index}
             className={`col-span-4 md:col-span-1 md:min-h-[21rem] h-auto border-2 border-neutral-100 rounded-md p-6 space-y-4 hover:scale-105 transition-transform duration-300 ${index === 3 ? '' : ''
               }`}
+            data-aos="zoom-in" data-aos-duration="2500"
           >
             <img src={icons[index]} className="w-18 md:w-20" alt="" />
             <div className="space-y-2">

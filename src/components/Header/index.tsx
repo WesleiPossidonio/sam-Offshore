@@ -31,9 +31,14 @@ export const Header = () => {
     ? ['Home', 'Sobre Nós', 'Serviços', 'Contatos']
     : ['Home', 'About Us', 'Services', 'Contact']
 
+  // Função para gerar id baseado no nome
+  const getSectionId = (text: string) =>
+    text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4 md:px-16 py-4 flex items-center justify-between">
 
@@ -43,12 +48,13 @@ export const Header = () => {
         </a>
 
         {/* Menu desktop */}
-        <nav className={`hidden md:flex gap-6 items-center`}>
+        <nav className="hidden md:flex gap-6 items-center">
           {menuItems.map((item, index) => (
             <a
               key={index}
-              href="#"
-              className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'}`}
+              href={`/#${getSectionId(item)}`}
+              className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'
+                }`}
             >
               {item}
             </a>
@@ -58,7 +64,10 @@ export const Header = () => {
         {/* Idioma */}
         <div className="hidden md:block">
           <Select onValueChange={handleLanguage}>
-            <SelectTrigger className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'}`}>
+            <SelectTrigger
+              className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'
+                }`}
+            >
               <SelectValue placeholder={isPT ? 'Brasil 🇧🇷' : 'USA 🇺🇸'} />
             </SelectTrigger>
             <SelectContent className="text-neutral-900">
@@ -79,7 +88,12 @@ export const Header = () => {
         <div className="md:hidden bg-white shadow-md px-4 py-4">
           <nav className="flex flex-col gap-4">
             {menuItems.map((item, index) => (
-              <a key={index} href="#" className="text-black font-semibold text-lg">
+              <a
+                key={index}
+                href={`/#${getSectionId(item)}`}
+                className="text-black font-semibold text-lg"
+                onClick={() => setMenuOpen(false)} // fecha o menu ao clicar
+              >
                 {item}
               </a>
             ))}

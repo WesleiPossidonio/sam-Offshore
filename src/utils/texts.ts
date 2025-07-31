@@ -97,6 +97,18 @@ export const sectionServiceContent = {
         description:
           'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
       },
+
+      {
+        title: 'Apoio Multissetorial',
+        description:
+          'Nosso suporte se estende aos setores internos da sua empresa para garantir a continuidade das operações:',
+      },
+
+      {
+        title: 'oordenação Operacional Portuária',
+        description:
+          'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
+      },
     ],
     seeMore: 'Ver Mais',
     seeLess: 'Fechar',
@@ -115,6 +127,18 @@ export const sectionServiceContent = {
         title: 'Operational Logistics',
         description:
           'Full support for the movement of people, cargo, and services in terminals:',
+      },
+
+      {
+        title: 'Multisectoral Support',
+        description:
+          "Our support extends to your company's internal sectors to ensure continuity of operations:",
+      },
+
+      {
+        title: 'Port Operations Coordination',
+        description:
+          'We provide technical support for cargo operations and logistics services:',
       },
     ],
     seeMore: 'See More',
