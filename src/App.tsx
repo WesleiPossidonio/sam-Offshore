@@ -3,6 +3,7 @@ import { Footer, Header } from "./components"
 
 import { Router } from "./Routes/Routes"
 import { AppProvider } from "./context"
+import { WhatsappButton } from "./components/WhatsappButton"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <main className="w-full relative">
           <Header />
           <Router />
+          <WhatsappButton />
           <Footer />
         </main>
       </AppProvider>

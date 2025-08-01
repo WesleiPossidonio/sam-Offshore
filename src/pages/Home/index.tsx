@@ -9,7 +9,6 @@ export const Home = () => {
       <About />
       <Adjects />
       <SectionService />
-      {/* <CallAction /> */}
       <Contacts />
     </main>
   )

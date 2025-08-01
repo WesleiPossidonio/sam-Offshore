@@ -23,7 +23,9 @@ export const Hero = () => {
         </p>
 
         <Button className="w-48 h-15 mt-6 text-lg font-semibold bg-blue-950">
-          {content.button}
+          <a href='https://wa.me/5522998248264' target='_blank'>
+            {content.button}
+          </a>
         </Button>
       </div>
 

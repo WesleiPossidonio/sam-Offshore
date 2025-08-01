@@ -55,8 +55,7 @@ export const About = () => {
             </p>
 
             <a
-              href="#"
-              target="_blank"
+              href='https://wa.me/5522998248264' target='_blank'
               className=" text-sm text-white text-center flex items-center gap-2 font-semibold px-6 py-2 mt-1
                bg-blue-900 rounded-xl hover:bg-blue-950 ease-in-out duration-100"
               rel="noopener noreferrer"
