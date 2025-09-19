@@ -1,4 +1,4 @@
-import ImageBarco from '@/assets/ImgBarcos.jpg'
+import ImageBarco from '@/assets/navioAbout.jpg'
 import ImageBarco2 from '@/assets/ImgBarco2.jpg'
 import ImageBarco3 from '@/assets/ImgBarco3.jpg'
 import { ArrowRight } from 'lucide-react'

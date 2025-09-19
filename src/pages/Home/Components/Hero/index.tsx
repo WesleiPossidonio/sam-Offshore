@@ -1,4 +1,4 @@
-import Video from '@/assets/VideoHero.mp4'
+import Video from '@/assets/ImageBanner.mp4'
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '@/hooks/useLanguage'
 import { heroContent } from '@/utils/texts'
@@ -9,7 +9,7 @@ export const Hero = () => {
 
   return (
     <section className="w-full md:min-h-[55rem] h-auto relative overflow-hidden">
-      <video className="w-full min-h-[40rem] md:h-[55rem] h-full object-cover" autoPlay loop muted>
+      <video className="w-full min-h-[40rem] md:h-[60rem] h-full object-cover" autoPlay loop muted>
         <source src={Video} className="w-full" />
       </video>
 
