@@ -3,7 +3,12 @@ export const aboutTexts = {
     tag: 'Sobre Nós',
     title: 'SAM Offshore: Transporte Marítimo de Qualidade',
     paragraph:
-      'Somos uma empresa especializada em serviços de transporte marítimo, oferecendo soluções eficientes e seguras para atender às necessidades dos nossos clientes. Com uma equipe experiente e comprometida, garantimos a entrega pontual e a satisfação total.',
+      `SAM OFFSHOE foi fundada em 2003 para oferecer serviços 
+       de agência marítima com qualidade e confiabilidade ao setor offshore.
+       Com atuação em Macaé e São João da Barra, estamos presentes nos 
+       principais polos da indústria de petróleo e gás. Nossa experiência e 
+       dedicação garantem eficiência, segurança e soluções ajustadas às 
+       necessidades de cada operação.`,
     button: 'Conheça a SAM Offshore',
     metricClients: 'Clientes Atendidos',
     metricTransports: 'Tranportes Feitos',
@@ -12,7 +17,11 @@ export const aboutTexts = {
     tag: 'About Us',
     title: 'SAM Offshore: Quality Maritime Transportation',
     paragraph:
-      'We are a company specialized in maritime transport services, offering efficient and safe solutions to meet our clients’ needs. With an experienced and committed team, we ensure punctual delivery and total satisfaction.',
+      `SAM OFFSHOE was founded in 2003 to provide reliable, high-quality 
+      shipping agency services to the offshore sector. With operations in Macaé 
+      and São João da Barra, we are present in key hubs of the oil and gas industry.
+      Our experience and commitment ensure efficiency, safety, and solutions 
+      tailored to each operation’s needs.`,
     button: 'Learn about SAM Offshore',
     metricClients: 'Clients Served',
     metricTransports: 'Completed Transports',
@@ -22,47 +31,48 @@ export const aboutTexts = {
 export const adjectsTexts = {
   'pt-BR': [
     {
-      title: 'Confiabilidade Operacional',
+      title: 'Segurança',
       description:
-        'Atuamos com total aderência às normas e regulamentações portuárias, assegurando operações marítimas seguras, auditáveis e transparentes do início ao fim.',
+        'priorizamos a segurança em todas as nossas operações',
     },
     {
-      title: 'Agilidade Estratégica',
+      title: 'Eficiência',
       description:
-        'Nossas respostas são rápidas porque entendemos a urgência do setor. Agimos com precisão logística para que sua operação siga sem atrasos ou imprevistos.',
+        'buscamos sempre melhorar nossos processos e procedimentos para garantir a eficiência'
     },
     {
-      title: 'Eficiência Logística',
+      title: 'Confiabilidade',
       description:
-        'Otimizamos cada etapa com inteligência operacional, promovendo economia de tempo, redução de custos e fluidez nos processos — tanto em terra quanto no mar.',
+        'somos comprometidos em fornecer serviços confiáveis e de alta qualidade',
     },
     {
-      title: 'Comprometimento Total',
+      title: 'Satisfação do cliente',
       description:
-        'Nossa equipe acompanha cada missão com dedicação integral, oferecendo suporte técnico e humano com foco na entrega pontual e no sucesso do cliente.',
+        'nossa prioridade é garantir a satisfação de nossos clientes',
     },
   ],
   en: [
     {
-      title: 'Operational Reliability',
+      title: 'Safety',
       description:
-        'We operate in full compliance with port regulations, ensuring safe, auditable, and transparent maritime operations from start to finish.',
+        'we prioritize safety in all of our operations',
     },
     {
-      title: 'Strategic Agility',
+      title: 'Efficiency',
       description:
-        'Our responses are fast because we understand the urgency of the sector. We act with logistical precision so your operation continues without delays or setbacks.',
+        'we constantly strive to improve our processes and procedures to ensure efficiency',
     },
     {
-      title: 'Logistical Efficiency',
+      title: 'Reliability',
       description:
-        'We optimize every step with operational intelligence, saving time, reducing costs, and ensuring process fluidity — both on land and at sea.',
+        'we are committed to delivering reliable, high-quality services',
     },
     {
-      title: 'Total Commitment',
+      title: 'Customer Satisfaction',
       description:
-        'Our team follows each mission with full dedication, offering technical and human support focused on timely delivery and customer success.',
+        'our priority is to ensure our customers’ satisfaction',
     },
+
   ],
 }
 
@@ -84,78 +94,95 @@ export const heroContent = {
 export const sectionServiceContent = {
   'pt-BR': {
     tag: 'Serviços',
-    title: 'Soluções que impulsionam sua operação',
-    description: 'Oferecemos serviços estratégicos para garantir segurança, agilidade e eficiência nas operações portuárias e logísticas.',
+    title: 'Serviços de agenciamento marítimo',
+    description:
+      'Gestão completa e eficiente das operações portuárias, com suporte 24/7, garantindo agilidade, segurança e conformidade em cada escala.',
     services: [
       {
         id: 1,
-        title: 'Despacho Marítimo',
+        title: 'Serviços de agenciamento marítimo',
         description:
-          'Gerenciamos todas as obrigações legais e operacionais junto aos órgãos competentes, garantindo conformidade e agilidade:',
-        route: '/despacho-maritimo'
+          'Gestão completa e eficiente das operações portuárias, garantindo agilidade, segurança e conformidade em cada escala.',
+        route: '/Servicos-de-Agenciamento-Marítimo'
       },
       {
         id: 2,
-        title: 'Logística Operacional',
+        title: 'Monitoramento de escalas e comunicação com autoridades',
         description:
-          'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
-        route: '/Logística-de-Operacional'
+          'Acompanhamento contínuo das operações e interação direta com autoridades portuárias, assegurando transparência e regularidade.',
+        route: '/Monitoramento-de-Escalas'
       },
       {
         id: 3,
-        title: 'Apoio Multissetorial',
+        title: 'Suporte logístico',
         description:
-          'Nosso suporte se estende aos setores internos da sua empresa para garantir a continuidade das operações:',
-        route: '/apoio-multissetorial'
+          'Coordenação de transportes, armazenagem e suprimentos para otimizar processos e reduzir custos operacionais.',
+        route: '/Suporte-Logístico'
       },
       {
         id: 4,
-        title: 'Coordenação Operacional Portuária',
+        title: 'Assistência a tripulação',
         description:
-          'Suporte integral à movimentação de pessoas, cargas e serviços nos terminais:',
-        route: '/Coordenação-Operacional-Portuária'
+          'Apoio completo aos tripulantes, incluindo serviços de desembarque, embarque, hospedagem e cuidados médicos, sempre com atenção às necessidades humanas',
+        route: '/Assitencia-de-Tripulação'
       },
+      {
+        id: 5,
+        title: 'Representação local perante órgãos fiscalizadores',
+        description:
+          'Atuação responsável e profissional junto às entidades regulatórias, garantindo conformidade legal e tranquilidade para os armadores',
+        route: '/representacao'
+      }
     ],
     seeMore: 'Ver Mais',
-    seeLess: 'Fechar',
+    seeLess: 'Fechar'
   },
   en: {
     tag: 'Services',
     title: 'Solutions that drive your operation',
-    description: 'We offer strategic services to ensure safety, agility, and efficiency in port and logistics operations.',
+    description:
+      'Comprehensive and efficient management of port operations, with 24/7 support, ensuring agility, safety, and full compliance at every call.',
     services: [
       {
         id: 1,
-        title: 'Maritime Clearance',
+        title: 'Maritime Agency Services',
         description:
-          'We manage all legal and operational obligations with the authorities, ensuring compliance and agility:',
-        route: '/despacho-maritimo'
+          'Comprehensive and efficient management of port operations, ensuring agility, safety, and full compliance at every call.',
+        route: '/Servicos-de-Agenciamento-Marítimo'
       },
       {
         id: 2,
-        title: 'Operational Logistics',
+        title: 'Schedule Monitoring & Authority Liaison',
         description:
-          'Full support for the movement of people, cargo, and services in terminals:',
-        route: '/Logística-de-Operacional'
+          'Continuous oversight of operations and direct interaction with port authorities, ensuring transparency and regularity.',
+        route: '/Monitoramento-de-Escalas'
       },
       {
         id: 3,
-        title: 'Multisectoral Support',
+        title: 'Logistical Support',
         description:
-          "Our support extends to your company's internal sectors to ensure continuity of operations:",
-        route: '/apoio-multissetorial'
+          'Coordination of transport, storage, and supplies to optimize processes and reduce operational costs.',
+        route: '/Suporte-Logístico'
       },
       {
         id: 4,
-        title: 'Port Operations Coordination',
+        title: 'Crew Assistance',
         description:
-          'We provide technical support for cargo operations and logistics services:',
-        route: '/Coordenação-Operacional-Portuária'
+          'Complete support for crew members, including embarkation, disembarkation, accommodation, and medical care, always with a human-focused approach.',
+        route: '/Assitencia-de-Tripulação'
       },
+      {
+        id: 5,
+        title: 'Local Representation',
+        description:
+          'Professional representation with local regulatory bodies, ensuring legal compliance and peace of mind for shipowners.',
+        route: '/representacao'
+      }
     ],
     seeMore: 'See More',
-    seeLess: 'Close',
-  },
+    seeLess: 'Close'
+  }
 }
+
 
 

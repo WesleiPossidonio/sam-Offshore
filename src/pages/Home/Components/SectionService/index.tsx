@@ -1,13 +1,17 @@
 import ImageOne from '@/assets/ImageService.avif'
 import ImageTwo from '@/assets/port-de-barcelona-industrial.jpg'
+import ImageLogistic from '@/assets/logistica.jpg'
+import ImageAssitentClient from '@/assets/suport-client.jpg'
+
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '@/hooks/useLanguage'
 import { sectionServiceContent } from '@/utils/texts'
 import { ArrowRight } from 'lucide-react'
 import { useState, useEffect } from 'react'
+
+import { useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useNavigate } from 'react-router-dom'
 
 export const SectionService = () => {
   const [allServices, setAllServices] = useState(false)
@@ -19,7 +23,7 @@ export const SectionService = () => {
     AOS.init()
   }, [])
 
-  const images = [ImageOne, ImageTwo]
+  const images = [ImageOne, ImageLogistic, ImageAssitentClient, ImageTwo]
 
   const handleAllServices = () => {
     setAllServices((prev) => !prev)
