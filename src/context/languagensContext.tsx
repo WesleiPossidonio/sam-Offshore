@@ -1,32 +1,25 @@
 import {
   type ReactNode,
-  createContext,
   useEffect,
   useState,
 } from 'react'
-
-interface LanguageContextType {
-  language: string
-
-  handleLanguage: (lang: string) => void
-}
+import { LanguageContext } from './languageContext'
 
 interface LanguageContextProviderProps {
   children: ReactNode
 }
 
-export const LanguageContext = createContext({} as LanguageContextType)
-
 export const LanguageContextProvider = ({ children }: LanguageContextProviderProps) => {
   const [language, setLanguage] = useState('pt-BR')
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('language')
-    if (storedLanguage) {
-      setLanguage(storedLanguage)
-    }
-    else {
-      localStorage.setItem('language', language)
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('language')
+      if (storedLanguage) {
+        setLanguage(storedLanguage)
+      } else {
+        localStorage.setItem('language', language)
+      }
     }
   }, [])
 
@@ -36,12 +29,7 @@ export const LanguageContextProvider = ({ children }: LanguageContextProviderPro
   }
 
   return (
-    <LanguageContext.Provider
-      value={{
-        language,
-        handleLanguage
-      }}
-    >
+    <LanguageContext.Provider value={{ language, handleLanguage }}>
       {children}
     </LanguageContext.Provider>
   )
