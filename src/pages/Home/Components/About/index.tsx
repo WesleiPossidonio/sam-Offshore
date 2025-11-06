@@ -17,26 +17,12 @@ export const About = () => {
 
           <div className="flex items-center justify-center gap-3 md:gap-6 order-2 md:order-1" data-aos="fade-left" data-aos-duration="2500">
             <div className='relative flex flex-col gap-6'>
-              <span className=" absolute -left-4 -top-5 flex flex-col items-center justify-center p-4 bg-neutral-100 rounded-lg shadow">
-                <strong className="text-2xl md:text-4xl self-start text-blue-900">300+</strong>
-                <p className="text-sm md:text-md text-center font-semibold text-neutral-600">
-                  {t.metricClients}
-                </p>
-              </span>
-
               <img src={ImageBarco} className='w-72 md:h-[18rem] rounded-lg shadow-lg' alt="" />
               <img src={ImageBarco2} className='w-72 md:h-[10.5rem] rounded-lg shadow-lg' alt="" />
             </div>
 
             <div className='relative'>
               <img src={ImageBarco3} className='w-72 md:h-[25rem] rounded-lg shadow-lg' alt="" />
-              <span className=" absolute left-12 -bottom-15 flex flex-col items-center 
-                justify-center text-center p-2 md:p-4 bg-neutral-100 rounded-lg shadow">
-                <strong className="text-2xl md:text-4xl text-blue-900">200+</strong>
-                <p className="text-sm md:text-md font-semibold text-neutral-500">
-                  {t.metricTransports}
-                </p>
-              </span>
             </div>
           </div>
 
@@ -51,7 +37,11 @@ export const About = () => {
             </h1>
 
             <p className="text-md text-gray-700">
-              {t.paragraph}
+              {t.paragraphOne}
+            </p>
+
+            <p className="text-md text-gray-700 mt-3">
+              {t.paragraphTwo}
             </p>
 
             <a

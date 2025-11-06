@@ -27,14 +27,14 @@ export const Contacts = () => {
         <div className="col-span-6 md:col-span-3 flex flex-col gap-2 items-start justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-neutral-900 text-center md:text-start">
             {language === 'pt-BR'
-              ? 'Vamos transformar \n sua necessidade em solução!'
-              : 'Let’s turn your need into a solution!'}
+              ? 'Entre em contato conosco para saber mais sobre nossos serviços e como podemos ajudá-lo.'
+              : 'Contact us to learn more about our services and how we can help you.!'}
           </h1>
 
           <p className="text-sm md:text-md text-center md:text-start">
             {language === 'pt-BR'
-              ? 'Se você busca um atendimento ágil, transparente e focado no que realmente importa para você, fale com a gente. Estamos prontos para ouvir, entender e oferecer o que há de melhor em nossos serviços.'
-              : 'If you are looking for fast, transparent service focused on what really matters to you, talk to us. We are ready to listen, understand, and provide the best in our services.'}
+              ? 'Nossa equipe está à disposição para atender às suas necessidades e garantir o sucesso de suas operações.'
+              : 'Our team is available to meet your needs and ensure the success of your operations.'}
           </p>
 
           <div className="w-full grid grid-cols-2 gap-4 mt-8">
