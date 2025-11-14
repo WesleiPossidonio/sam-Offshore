@@ -120,7 +120,7 @@ export const sectionServiceContent = {
         title: 'Serviços de agenciamento marítimo',
         description:
           'Gestão completa e eficiente das operações portuárias, garantindo agilidade, segurança e conformidade em cada escala.',
-        route: '/Servicos-de-Agenciamento-Marítimo'
+        route: '/agenciamento-marítimo'
       },
       {
         id: 2,
@@ -165,7 +165,7 @@ export const sectionServiceContent = {
         title: 'Maritime Agency Services',
         description:
           'Comprehensive and efficient management of port operations, ensuring agility, safety, and full compliance at every call.',
-        route: '/Servicos-de-Agenciamento-Marítimo'
+        route: '/agenciamento-marítimo'
       },
       {
         id: 2,

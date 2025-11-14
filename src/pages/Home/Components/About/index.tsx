@@ -1,6 +1,6 @@
-import ImageBarco from '@/assets/navioAbout.jpg'
-import ImageBarco2 from '@/assets/ImgBarco2.jpg'
-import ImageBarco3 from '@/assets/ImgBarco3.jpg'
+import ImageBarco from '@/assets/AboutImagetrhee.jpg'
+import ImageBarco2 from '@/assets/AboutOne.jpg'
+import ImageBarco3 from '@/assets/AboutImageTwo.jpg'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/hooks/useLanguage'
 import { aboutTexts } from '@/utils/texts'
@@ -17,12 +17,12 @@ export const About = () => {
 
           <div className="flex items-center justify-center gap-3 md:gap-6 order-2 md:order-1" data-aos="fade-left" data-aos-duration="2500">
             <div className='relative flex flex-col gap-6'>
-              <img src={ImageBarco} className='w-72 md:h-[18rem] rounded-lg shadow-lg' alt="" />
-              <img src={ImageBarco2} className='w-72 md:h-[10.5rem] rounded-lg shadow-lg' alt="" />
+              <img src={ImageBarco} className='w-72 h-28 md:h-[18rem] rounded-lg shadow-lg' alt="" />
+              <img src={ImageBarco2} className='w-72 h-32 md:h-[15.5rem] rounded-lg shadow-lg' alt="" />
             </div>
 
             <div className='relative'>
-              <img src={ImageBarco3} className='w-72 md:h-[25rem] rounded-lg shadow-lg' alt="" />
+              <img src={ImageBarco3} className='w-72 md:h-[27rem] rounded-lg shadow-lg' alt="" />
             </div>
           </div>
 
