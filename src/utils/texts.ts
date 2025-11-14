@@ -95,13 +95,13 @@ export const adjectsTexts = {
 
 export const heroContent = {
   'pt-BR': {
-    title: 'Excelência em Transporte e Operações Offshore',
+    title: 'Excelência em Serviços e Operações Offshore',
     description:
       'Combinamos tecnologia, experiência e segurança para garantir máxima eficiência logística em cada entrega.',
     button: 'Saiba Mais!',
   },
   en: {
-    title: 'Excellence in Offshore Transportation and Operations',
+    title: 'Excellence in Offshore Services and Operations',
     description:
       'We combine technology, experience, and safety to ensure maximum logistics efficiency in every delivery.',
     button: 'Learn More!',
