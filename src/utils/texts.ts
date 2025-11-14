@@ -1,7 +1,7 @@
 export const aboutTexts = {
   'pt-BR': {
     tag: 'Sobre Nós',
-    title: 'SAM Offshore: Transporte Marítimo de Qualidade',
+    title: 'SAM Offshore: Referência em Serviços para a Indústria Marítima',
     paragraphOne:
       `A SAM OFFSHOE foi fundada em 2003 com o objetivo de fornecer serviços de 
       alta qualidade e confiabilidade para a indústria marítima, com foco 
@@ -23,7 +23,7 @@ export const aboutTexts = {
   },
   en: {
     tag: 'About Us',
-    title: 'SAM Offshore: Quality Maritime Transportation',
+    title: 'SAM Offshore: Referência em Serviços para a Indústria Marítima',
     paragraphOne:
       `A SAM OFFSHOE foi fundada em 2003 com o objetivo de fornecer serviços de 
       alta qualidade e confiabilidade para a indústria marítima, com foco 
@@ -115,6 +115,13 @@ export const sectionServiceContent = {
     description:
       'Gestão completa e eficiente das operações portuárias, com suporte 24/7, garantindo agilidade, segurança e conformidade em cada escala.',
     services: [
+      {
+        id: 1,
+        title: 'Serviços de agenciamento marítimo',
+        description:
+          'Gestão completa e eficiente das operações portuárias, garantindo agilidade, segurança e conformidade em cada escala.',
+        route: '/Servicos-de-Agenciamento-Marítimo'
+      },
       {
         id: 2,
         title: 'Monitoramento de escalas e comunicação com autoridades',
