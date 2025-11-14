@@ -17,8 +17,8 @@ export const About = () => {
 
           <div className="flex items-center justify-center gap-3 md:gap-6 order-2 md:order-1" data-aos="fade-left" data-aos-duration="2500">
             <div className='relative flex flex-col gap-6'>
-              <img src={ImageBarco} className='w-72 h-28 md:h-[18rem] rounded-lg shadow-lg' alt="" />
-              <img src={ImageBarco2} className='w-72 h-32 md:h-[15.5rem] rounded-lg shadow-lg' alt="" />
+              <img src={ImageBarco} className='w-72 h-28 md:h-[13rem] rounded-lg shadow-lg' alt="" />
+              <img src={ImageBarco2} className='w-72 h-32 md:h-[18.5rem] rounded-lg shadow-lg' alt="" />
             </div>
 
             <div className='relative'>
