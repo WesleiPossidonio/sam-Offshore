@@ -95,13 +95,13 @@ export const adjectsTexts = {
 
 export const heroContent = {
   'pt-BR': {
-    title: 'Soluções Inteligentes em Transporte e Operações Portuárias',
+    title: 'Excelência em Transporte e Operações Offshore',
     description:
       'Combinamos tecnologia, experiência e segurança para garantir máxima eficiência logística em cada entrega.',
     button: 'Saiba Mais!',
   },
   en: {
-    title: 'Smart Solutions in Transport and Port Operations',
+    title: 'Excellence in Offshore Transportation and Operations',
     description:
       'We combine technology, experience, and safety to ensure maximum logistics efficiency in every delivery.',
     button: 'Learn More!',
@@ -115,13 +115,6 @@ export const sectionServiceContent = {
     description:
       'Gestão completa e eficiente das operações portuárias, com suporte 24/7, garantindo agilidade, segurança e conformidade em cada escala.',
     services: [
-      {
-        id: 1,
-        title: 'Serviços de agenciamento marítimo',
-        description:
-          'Gestão completa e eficiente das operações portuárias, garantindo agilidade, segurança e conformidade em cada escala.',
-        route: '/Servicos-de-Agenciamento-Marítimo'
-      },
       {
         id: 2,
         title: 'Monitoramento de escalas e comunicação com autoridades',
