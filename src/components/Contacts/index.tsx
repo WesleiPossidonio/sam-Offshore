@@ -54,8 +54,8 @@ export const Contacts = () => {
                 <EnvelopeIcon size={32} className="text-white col-span-1" />
                 <div className="col-span-3 flex flex-col items-start justify-center mt-2">
                   <h2 className="text-lg text-white font-semibold">Email</h2>
-                  <a href="mailto:contato@samoffhore.com.br" className="text-sm text-white">
-                    contato@samoffhore.com.br
+                  <a href="mailto:contato@Samoffhore.com.br" className="text-sm text-white">
+                    contato@Samoffhore.com.br
                   </a>
                 </div>
               </div>
@@ -87,8 +87,8 @@ export const Contacts = () => {
                 <EnvelopeIcon size={32} className="text-white col-span-1" />
                 <div className="col-span-3 flex flex-col items-start justify-center mt-2">
                   <h2 className="text-lg text-white font-semibold">Email</h2>
-                  <a href="mailto:contato@samoffhore.com.br" className="text-sm text-white">
-                    contato@samoffhore.com.br
+                  <a href="mailto:contato@Samoffhore.com.br" className="text-sm text-white">
+                    contato@Samoffhore.com.br
                   </a>
                 </div>
               </div>

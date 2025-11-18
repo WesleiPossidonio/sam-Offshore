@@ -8,7 +8,7 @@ export const Hero = () => {
   const content = heroContent[language as 'pt-BR' | 'en']
 
   return (
-    <section className="w-full md:min-h-[55rem] h-auto relative overflow-hidden">
+    <section className="w-full md:min-h-[55rem] h-auto relative overflow-hidden" id='home'>
       <video className="w-full min-h-[40rem] md:h-[65rem] h-full object-cover" autoPlay loop muted>
         <source src={Video} className="w-full" />
       </video>

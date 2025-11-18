@@ -1,8 +1,6 @@
 import Logo from '@/assets/sam_offshore_transparente.png'
 import {
-  FacebookLogoIcon,
-  InstagramLogoIcon,
-  LinkedinLogoIcon,
+
   WhatsappLogoIcon
 } from '@phosphor-icons/react'
 import { useLanguage } from '@/hooks/useLanguage'
@@ -22,27 +20,22 @@ export const Footer = () => {
               : 'SAM Offshore operates with commitment and excellence in maritime and industrial solutions.'}
           </p>
 
-          <div className="flex items-center justify-start mt-2 gap-2">
-            <LinkedinLogoIcon size={32} />
-            <InstagramLogoIcon size={32} />
-            <FacebookLogoIcon size={32} />
-          </div>
         </div>
 
         <div className="col-span-1 flex flex-col items-start justify-center">
           <h1 className="text-xl font-semibold">{isPT ? 'Navegação' : 'Navigation'}</h1>
           <div className="w-full flex flex-col items-start justify-center gap-1 mt-2">
             <a href="#" className="font-semibold text-neutral-700">{isPT ? 'Home' : 'Home'}</a>
-            <a href="#" className="font-semibold text-neutral-700">{isPT ? 'Sobre Nós' : 'About Us'}</a>
-            <a href="#" className="font-semibold text-neutral-700">{isPT ? 'Serviços' : 'Services'}</a>
-            <a href="#" className="font-semibold text-neutral-700">{isPT ? 'Contatos' : 'Contact'}</a>
+            <a href={isPT ? '#sobre-nos' : '#about-us'} className="font-semibold text-neutral-700">{isPT ? 'Sobre Nós' : 'About Us'}</a>
+            <a href={isPT ? '#servicos' : 'services'} className="font-semibold text-neutral-700">{isPT ? 'Serviços' : 'Services'}</a>
+            <a href={isPT ? '#contatos' : '#contact'} className="font-semibold text-neutral-700">{isPT ? 'Contatos' : 'Contact'}</a>
           </div>
         </div>
 
         <div className="col-span-1 flex flex-col items-start justify-center gap-1">
           <h1 className="text-xl font-semibold">{isPT ? 'Contatos' : 'Contacts'}</h1>
-          <a href="mailto:contato@samoffhore.com.br">
-            Email: contato@samoffhore.com.br
+          <a href="mailto:contato@Samoffhore.com.br">
+            Email: contato@Samoffhore.com.br
           </a>
 
           <div className="flex items-center justify-start gap-1">

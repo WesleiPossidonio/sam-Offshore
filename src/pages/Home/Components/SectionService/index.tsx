@@ -50,7 +50,7 @@ export const SectionService = () => {
   return (
     <section
       className="w-full min-h-[40rem] flex items-end justify-center"
-      id={language === 'pt-br' ? 'servicos' : 'services'}
+      id={language === 'pt-BR' ? 'servicos' : 'services'}
     >
       <div className="container px-8 py-14">
         <div className="flex flex-col gap-4 mb-11">

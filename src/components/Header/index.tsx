@@ -28,12 +28,18 @@ export const Header = () => {
   }, [])
 
   const menuItems = isPT
-    ? ['Home', 'Sobre Nós', 'Serviços', 'Contatos']
-    : ['Home', 'About Us', 'Services', 'Contact']
-
-  // Função para gerar id baseado no nome
-  const getSectionId = (text: string) =>
-    text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+    ? [
+      { label: 'Home', id: 'home' },
+      { label: 'Sobre Nós', id: 'sobre-nos' },
+      { label: 'Serviços', id: 'servicos' },
+      { label: 'Contatos', id: 'contatos' }
+    ]
+    : [
+      { label: 'Home', id: 'home' },
+      { label: 'About Us', id: 'about-us' },
+      { label: 'Services', id: 'services' },
+      { label: 'Contact', id: 'contact' }
+    ]
 
   return (
     <header
@@ -52,14 +58,14 @@ export const Header = () => {
           {menuItems.map((item, index) => (
             <a
               key={index}
-              href={`/#${getSectionId(item)}`}
-              className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'
-                }`}
+              href={`/#${item.id}`}
+              className={`font-semibold text-lg ${isScrolled ? 'text-black' : 'text-white'}`}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
+
 
         {/* Idioma */}
         <div className="hidden md:block">
@@ -90,11 +96,11 @@ export const Header = () => {
             {menuItems.map((item, index) => (
               <a
                 key={index}
-                href={`/#${getSectionId(item)}`}
+                href={`/#${item.id}`}
                 className="text-black font-semibold text-lg"
                 onClick={() => setMenuOpen(false)} // fecha o menu ao clicar
               >
-                {item}
+                {item.label}
               </a>
             ))}
             <Select onValueChange={handleLanguage}>
