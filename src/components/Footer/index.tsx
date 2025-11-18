@@ -40,14 +40,14 @@ export const Footer = () => {
 
           <div className="flex items-center justify-start gap-1">
             <WhatsappLogoIcon size={22} />
-            <a href="http://" className="text-sm" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5522998248264" className="text-sm" target="_blank" rel="noopener noreferrer">
               (22) 99824-8264
             </a>
           </div>
 
           <div className="flex items-center justify-start gap-1">
             <WhatsappLogoIcon size={22} />
-            <a href="http://" className="text-sm" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5522999021986" className="text-sm" target="_blank" rel="noopener noreferrer">
               (22) 99902-1986
             </a>
           </div>
