@@ -69,8 +69,8 @@ export const Footer = () => {
             <p className="font-semibold text-neutral-700">São João da Barra RJ</p>
             <p className="text-sm text-neutral-700">
               {isPT
-                ? 'Rua Bar de Barcelos, 302, Centro, São João da Barra-RJ'
-                : 'Rua Bar de Barcelos, 302, Downtown, São João da Barra-RJ'}
+                ? 'Rua José Gomes, 15, Centro São João da Barra - RJ'
+                : '15 José Gomes Street, Downtown, São João da Barra – RJ'}
             </p>
           </div>
         </div>

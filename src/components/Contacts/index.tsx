@@ -10,12 +10,39 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react"
 import { useLanguage } from "@/hooks/useLanguage"
 
+
+
 export const Contacts = () => {
   useEffect(() => {
     AOS.init()
   }, [])
 
   const { language } = useLanguage()
+
+  const cards = [
+    {
+      icon: HouseIcon,
+      title: language === 'pt-BR' ? 'Endereço' : 'Address',
+      text: language === 'pt-BR'
+        ? 'Av. Elias Agostinho, 340, sala 902, Imbetiba Macaé - RJ'
+        : 'Av. Elias Agostinho, 340, room 902, Imbetiba Macaé - RJ',
+      email: "contato@Samoffhore.com.br",
+      phone: "(22) 99824-8264",
+      phoneLink: "+55229988264",
+      aos: "fade-up"
+    },
+    {
+      icon: HouseIcon,
+      title: language === 'pt-BR' ? 'Endereço' : 'Address',
+      text: language === 'pt-BR'
+        ? 'Rua José Gomes, 15, Centro São João da Barra - RJ'
+        : 'Rua José Gomes, 15, Downtown São João da Barra - RJ',
+      email: "contato@Samoffhore.com.br",
+      phone: "(22) 99902-1986",
+      phoneLink: "+5522999021986",
+      aos: "fade-down"
+    }
+  ]
 
   return (
     <section className="w-full min-h-[45rem] h-auto bg-white p-8 md:p-16 overflow-hidden" id={`${language === 'pt-BR' ? 'contatos' : 'contact'}`}>
@@ -36,74 +63,50 @@ export const Contacts = () => {
               ? 'Nossa equipe está à disposição para atender às suas necessidades e garantir o sucesso de suas operações.'
               : 'Our team is available to meet your needs and ensure the success of your operations.'}
           </p>
-
           <div className="w-full grid grid-cols-2 gap-4 mt-8">
-            {/* Primeiro card */}
-            <div className="col-span-2 md:col-span-1 min-h-72 h-auto p-4 bg-blue-950 rounded-xl flex flex-col justify-center gap-2" data-aos="fade-up" data-aos-duration="3000">
-              <div className="flex items-center gap-2">
-                <HouseIcon size={42} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Endereço' : 'Address'}</h2>
-                  <p className="text-sm text-white">
-                    Av. Elias Agostinho, 340, sala 902, Imbetiba <strong> Macaé - RJ</strong>
-                  </p>
+            {cards.map((item, index) => (
+              <div
+                key={index}
+                className="col-span-2 md:col-span-1 min-h-72 h-auto p-4 bg-blue-950 rounded-xl flex flex-col justify-center gap-4"
+                data-aos={item.aos}
+                data-aos-duration="3000"
+              >
+                {/* Endereço */}
+                <div className="flex items-center gap-2">
+                  <item.icon size={42} className="text-white col-span-1" />
+                  <div className="col-span-3 flex flex-col items-start justify-center mt-2">
+                    <h2 className="text-lg text-white font-semibold">{item.title}</h2>
+                    <p className="text-sm text-white">{item.text}</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center gap-2">
-                <EnvelopeIcon size={32} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">Email</h2>
-                  <a href="mailto:contato@Samoffhore.com.br" className="text-sm text-white">
-                    contato@Samoffhore.com.br
-                  </a>
+                {/* Email */}
+                <div className="flex items-center gap-2">
+                  <EnvelopeIcon size={32} className="text-white col-span-1" />
+                  <div className="col-span-3 flex flex-col items-start justify-center mt-2">
+                    <h2 className="text-lg text-white font-semibold">Email</h2>
+                    <a href={`mailto:${item.email}`} className="text-sm text-white">
+                      {item.email}
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center gap-2">
-                <PhoneCallIcon size={32} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Telefone' : 'Phone'}</h2>
-                  <a href="tel:+55229988264" className="text-sm text-white">
-                    (22) 99824-8264
-                  </a>
+                {/* Telefone */}
+                <div className="flex items-center gap-2">
+                  <PhoneCallIcon size={32} className="text-white col-span-1" />
+                  <div className="col-span-3 flex flex-col items-start justify-center mt-2">
+                    <h2 className="text-lg text-white font-semibold">
+                      {language === 'pt-BR' ? 'Telefone' : 'Phone'}
+                    </h2>
+                    <a href={`tel:${item.phoneLink}`} className="text-sm text-white">
+                      {item.phone}
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Segundo card */}
-            <div className="col-span-2 md:col-span-1 h-72 p-4 bg-blue-950 rounded-xl flex flex-col justify-center gap-2" data-aos="fade-down" data-aos-duration="3000">
-              <div className="flex items-center gap-2">
-                <HouseIcon size={42} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Endereço' : 'Address'}</h2>
-                  <p className="text-sm text-white">
-                    Rua Bar de Barcelos, 302, Centro <strong>São João da Barra - RJ</strong>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <EnvelopeIcon size={32} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">Email</h2>
-                  <a href="mailto:contato@Samoffhore.com.br" className="text-sm text-white">
-                    contato@Samoffhore.com.br
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <PhoneCallIcon size={32} className="text-white col-span-1" />
-                <div className="col-span-3 flex flex-col items-start justify-center mt-2">
-                  <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Telefone' : 'Phone'}</h2>
-                  <a href="tel:+5522999021986" className="text-sm text-white">
-                    (22) 99902-1986
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
+
         </div>
 
         {/* Formulário */}

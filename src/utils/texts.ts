@@ -25,19 +25,19 @@ export const aboutTexts = {
     tag: 'About Us',
     title: 'SAM Offshore: Referência em Serviços para a Indústria Marítima',
     paragraphOne:
-      `A SAM OFFSHOE foi fundada em 2003 com o objetivo de fornecer serviços de 
-      alta qualidade e confiabilidade para a indústria marítima, com foco 
-      especial no ramo offshore. Desde então, nossa agência tem trabalhado 
-      incansavelmente para se estabelecer como uma das principais referências 
-      no setor, graças à nossa vasta experiência e dedicação ao atendimento 
-      das necessidades de nossos clientes.`,
+      `SAM Offshore was founded in 2003 with the goal of providing 
+      high-quality, reliable services to the maritime industry, with 
+      a special focus on the offshore sector. Since then, our agency 
+      has worked tirelessly to establish itself as one of the leading 
+      references in the field, thanks to our extensive experience and our 
+      commitment to meeting the needs of our clients.`,
     paragraphTwo: `
-    Com atuação estratégica nas cidades de Macaé e São João da Barra, 
-    no estado do Rio de Janeiro, nossa agência tem uma presença forte e
-    consolidada na região, conhecida por sua importância para a indústria 
-    de petróleo e gás. Nossa equipe tem trabalhado em estreita colaboração 
-    com armadores, e outras partes interessadas para garantir que nossas 
-    embarcações sejam atendidas com eficiência e segurança.
+    With strategic operations in the cities of Macaé and São João da Barra, 
+    in the state of Rio de Janeiro, our agency has a strong and well-established 
+    presence in the region, which is known for its importance to the oil and 
+    gas industry. Our team has worked in close collaboration with shipowners 
+    and other stakeholders to ensure that our vessels are serviced with 
+    efficiency and safety.
     `,
     button: 'Learn about SAM Offshore',
     metricClients: 'Clients Served',
