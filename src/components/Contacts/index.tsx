@@ -64,7 +64,7 @@ export const Contacts = () => {
                 <PhoneCallIcon size={32} className="text-white col-span-1" />
                 <div className="col-span-3 flex flex-col items-start justify-center mt-2">
                   <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Telefone' : 'Phone'}</h2>
-                  <a href="tel:+55229988264" target="_blank" className="text-sm text-white">
+                  <a href="tel:+55229988264" className="text-sm text-white">
                     (22) 99824-8264
                   </a>
                 </div>
@@ -97,7 +97,7 @@ export const Contacts = () => {
                 <PhoneCallIcon size={32} className="text-white col-span-1" />
                 <div className="col-span-3 flex flex-col items-start justify-center mt-2">
                   <h2 className="text-lg text-white font-semibold">{language === 'pt-BR' ? 'Telefone' : 'Phone'}</h2>
-                  <a href="tel:+5522999021986" target="_blank" className="text-sm text-white">
+                  <a href="tel:+5522999021986" className="text-sm text-white">
                     (22) 99902-1986
                   </a>
                 </div>
