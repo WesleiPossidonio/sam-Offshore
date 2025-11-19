@@ -34,7 +34,7 @@ export const Footer = () => {
 
         <div className="col-span-1 flex flex-col items-start justify-center gap-1">
           <h1 className="text-xl font-semibold">{isPT ? 'Contatos' : 'Contacts'}</h1>
-          <a href="mailto:contato@Samoffhore.com.br">
+          <a href="mailto:contato@samoffhore.com.br">
             Email: contato@Samoffhore.com.br
           </a>
 
